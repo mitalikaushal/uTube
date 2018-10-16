@@ -4,6 +4,7 @@ import YTSearch from 'youtube-api-search';
 
 import SearchBar from './components/search-bar';
 import Titles from './components/titles';
+import VideoDescription from './components/video-description'
 
 const API_KEY = "AIzaSyArPDGJ_0ZTU8DkaOE9OsGNSIRPFjsNMRU";
 
@@ -24,6 +25,7 @@ class App  extends Component {
         return (
             <div>
                 <SearchBar />
+                <VideoDescription video ={this.state.videos[0]} />
                 <Titles videos={this.state.videos} />
             </div>
         );
